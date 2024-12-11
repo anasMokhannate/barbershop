@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book an Appointment</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Barbershop</h1>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/booking">Book Appointment</a>
+        <a href="/appointments">View Appointments</a>
+      </div>
+    </div>
+  </header>
+  <div class="center-content">
+    <h2>Book Your Appointment</h2>
+    
+    <p>Choose your preferred date and time to get the best grooming experience. Our professional barbers are ready to serve you!</p>
+  </div>
+  <form action="/book" method="POST">
+    <h2>Appointment Form</h2>
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="date">Appointment Date</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Appointment Time</label>
+    <input type="time" id="time" name="time" required>
+
+    <button type="submit">Book Appointment</button>
+  </form>
+</body>
+</html>

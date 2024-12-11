@@ -1,0 +1,191 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #34495e;
+}
+
+/* Main Content */
+.center-content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.center-content h2 {
+  font-size: 2em;
+  color: #2c3e50;
+}
+
+.center-content p {
+  margin: 15px 0 20px;
+  font-size: 1.1em;
+  color: #7f8c8d;
+}
+
+.center-content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2980b9;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.center-content a:hover {
+  background-color: #3498db;
+}
+
+/* Form Styles */
+/* Center the form on the page */
+form {
+  max-width: 400px;
+  margin: 40px auto; /* Adjust spacing to center the form */
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form labels */
+form label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2c3e50;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Submit button */
+form button {
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+/* Error message */
+form p {
+  font-size: 14px;
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Adjust date and time inputs for consistency */
+form input[type="date"],
+form input[type="time"] {
+  padding: 8px;
+  font-size: 14px;
+}
+
+
+/* Appointments List */
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+ul li {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.1em;
+}
+
+ul li strong {
+  color: #2c3e50;
+}
+
+/* Services Section */
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  padding: 0 20px;
+}
+
+.service {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.service h3 {
+  color: #2c3e50;
+  font-size: 1.2em;
+}
+
+.service p {
+  font-size: 1em;
+  color: #7f8c8d;
+}

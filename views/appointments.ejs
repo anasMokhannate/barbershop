@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <h1>Barbershop</h1>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/booking">Book Appointment</a>
+        <a href="/appointments">View Appointments</a>
+      </div>
+    </div>
+  </header>
+  <div class="center-content">
+    <h2>Your Appointments</h2>
+    <p>Below is a list of all your upcoming appointments. If you need to make changes, contact us directly!</p>
+  </div>
+  <ul>
+    <% appointments.forEach(function(appointment) { %>
+      <li>
+        <strong>Name:</strong> <%= appointment.name %> <br>
+        <strong>Date:</strong> <%= appointment.date %> <br>
+        <strong>Time:</strong> <%= appointment.time %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
